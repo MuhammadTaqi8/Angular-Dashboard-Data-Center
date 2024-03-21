@@ -2,7 +2,7 @@
     <div class="card-body">
         <nav class="navbar navbar-dark bg-primary mb-1" [ngClass]="{'bg-danger': inDanger(), 'bg-success': !inDanger()}">
             <h1 class="navbar-brand mb-0">
-                <ng-content select="metric-title"></ng-content>
+                <ng-content select="metric-title ngy"></ng-content>
             </h1>
         </nav>
         <h4 class="card-title">{{value}}/{{max}} ({{value/max | percent:'1.0-2'}})</h4>
