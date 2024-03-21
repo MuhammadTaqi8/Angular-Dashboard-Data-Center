@@ -7,7 +7,7 @@
         </nav>
         <h4 class="card-title">{{value}}/{{max}} ({{value/max | percent:'1.0-2'}})</h4>
         <p class="card-text">
-            <ng-content select="metric-description"></ng-content>
+            <ng-content select="metric-description fiada"></ng-content>
         </p>
             <ngb-progressbar [value]="value" [max]="max" [type]="inDanger() ?'danger' : 'success'">
             </ngb-progressbar> 
